@@ -9,6 +9,33 @@ body {
     display: flex;
     flex-direction: column;
 }
-h1, h2{
+h1, h2, h3, h4, h5, p{
     color: #fff;
+}
+
+div, section, span, ul, li, a, header{
+    box-sizing: border-box;
+}
+
+#services{
+    background-color: #c57d4c39;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    position: relative;
+    text-align:center;
+    align-items: center;
+    align-content: center;
+    padding-bottom: 5%;
+}
+
+.cards {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    grid-gap: 20px;
+    text-align: center;
+    justify-content: center;
 }
