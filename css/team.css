@@ -1,72 +1,88 @@
-body {
-    background: url("https://lmaia-22.github.io/mygreenfoodprint/assets/backg.png") no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    margin: 0%;
-    padding: 0%;
-    display: flex;
-    flex-direction: column;
-    color: #fff;
-}
-section{
+#team {
   background-color: #c57d4c39;
-}
-
-html {
-  box-sizing: border-box;
-}
-
-*, *:before, *:after {
-  box-sizing: inherit;
-}
-
-.column {
-  float: left;
-  width: 25%;
-  margin-bottom: 16px;
-  padding: 0 8px;
+  text-align: center;
+  padding-top: 5%;
 }
 
 .card {
+  width: 100%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  margin: 8px;
 }
 
-.container {
-  padding: 0 16px;
+.card img{
+  max-width:90% ;
+  margin: auto;
+  text-align: center;
+  display: flex;
 }
 
-.container::after, .row::after {
-  content: "";
-  clear: both;
-  display: table;
+.card .child{
+  margin-top: 4%;
 }
 
-.title {
+.container1 {
+  padding: 0 10px;
+  height: 30vh;
+}
+.container1 .name{
+  font-size: 180%;
+}
+
+.container1 p{
+  text-align: center;
+  font-size: 125%;
+}
+
+.container1 .title {
   color: grey;
+  font-size: 150%;
+}
+
+.email{
+  text-align: center;
+  font-size: 100%;
+}
+.email p{
+  text-align: center;
+  font-size: 100%;
+}
+.btn{
+  display: flex;
+  margin: auto;
+  width: 100%;
+  margin-bottom: 4%;
 }
 
 .button {
-  border: none;
-  outline: 0;
-  display: inline-block;
-  padding: 8px;
+  background-color: #187c64ff;
   color: white;
-  background-color: #000;
-  text-align: center;
+  font-size: 1.2rem;
+  text-decoration: none;
+  padding: 8px 12px;
+  border: none;
   cursor: pointer;
-  width: 100%;
+  border-radius: 6px;
+  margin: auto;
+  text-align: center;
+  outline: 0;
+  width: 80%;
 }
 
 .button:hover {
-  background-color: #555;
+  background-color: rgb(5, 189, 146);
 }
 
+/* Added some media screen!
+------------------------------------------------- */
+
 @media screen and (max-width: 650px) {
-  .column {
-    width: 100%;
-    display: block;
-  }
+
+}
+
+@media screen and (max-width: 1020px) {
+}
+
+
+@media screen and (max-width: 1420px) {
+
 }

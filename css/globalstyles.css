@@ -1,0 +1,65 @@
+html, body {
+    height: 100%;
+  }
+  
+body {
+margin: 0%;
+padding: 0%;
+display: flex;
+flex-direction: column;
+}
+
+h1 {  
+color: #187c64ff;
+font-family: calibri;
+font-size: 50px;
+margin: 20px;
+text-align: center;
+}
+
+h2, h3, h4{  
+color: #187c64ff;
+font-family: calibri;
+font-size: 30px;
+margin: 20px;
+text-align: center;
+}
+
+h5, p {
+color: #666666ff;
+font-size: 25px;
+font-family: calibri;
+text-align: justify;
+}
+
+.some-page-wrapper {
+margin: 5%;
+}
+
+.row {
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+width: 100%;
+}
+
+.column {
+display: flex;
+flex-direction: column;
+flex-basis: 100%;
+flex: 1;
+margin: 2%;
+}
+
+.parent{
+  margin: auto;
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+.child {
+  margin: auto;
+  max-width: 100%;
+  max-height: 100%;
+}

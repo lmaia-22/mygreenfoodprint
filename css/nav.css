@@ -1,65 +1,73 @@
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0%;
+  padding: 0%;
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {  
+  color: #187c64ff;
+  font-family: calibri;
+  font-size: 50px;
+  margin: 20px;
+  text-align: center;
+}
+
+h2, h3, h4{  
+  color: #187c64ff;
+  font-family: calibri;
+  font-size: 30px;
+  margin: 20px;
+  text-align: center;
+}
+
+h5, p {
+  color: #666666ff;
+  font-size: 25px;
+  font-family: Calibri;
+  text-align: justify;
+}
+
 .navbar {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    color: #fff;
-    line-height: 60px;
+    background-color: #F2E2D7;
+}
+
+.nav_icon{
+  margin-top: 5%;
+  height: 25%;
+  width: 25%;
+}
+
+.header-fixed {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
 }
 
 .navbar .logo {
     flex: 3; 
 }
 
-.navbar .logo a {
-    display: block;
-    font-size: 30px;
-    font-weight: bold;
-    color: #fff;
-    text-decoration: none;
+.logo_img{
+  margin-top: 2%;
+  margin-left: 5%;
+  height: 15%;
+  width: 15%;
 }
-.navbar .logo a:hover {
-  color: #e2c8e2;
+
+.menu{
+  float:right;
 }
 
 .navbar nav {
-    flex: 8;
-}
-
-.navbar label {
-  user-select: none;
-  cursor: pointer;
-  padding: 28px 20px;
-  position: relative;
-  z-index: 3;
-}
-
-.navbar label i {
-  height: 2px;
-  position: relative;
-  transition: background .2s ease-out;
-  width: 18px;
-  font-style: normal;
-  font-weight: normal;
-}
-.navbar label i:before,
-.navbar label i:after {
-  content: '';
-  height: 100%;
-  position: absolute;
-  transition: all .2s ease-out;
-  width: 100%;
-}
-.navbar label i,
-.navbar label i:before,
-.navbar label i:after {
-  display: block;
-  background: #eee;  
-}
-.navbar label i:before {
-  top: 5px;
-}
-.navbar label i:after {
-  top: -5px;
+    flex: 12;
 }
 
 .navbar #navbar-toggle {
@@ -119,16 +127,6 @@
       cursor: pointer;
       transition: all 0.3s ease-out;
     }
-    .navbar nav li:hover {
-      background: #e2c8e2;
-    }
-    .navbar nav li:hover a {
-      color: #fff;
-      transition: all 0.3s ease-out;
-    }
-    .navbar nav li a {
-      color: #e2c8e2;
-    }
 }
 
 @media (min-width: 768px) {
@@ -151,13 +149,17 @@
       color: #fff;
       text-decoration: none;
     }
-    .navbar nav li.active {
-      background: #e2c8e2;  
-    }
-    .navbar nav li:hover {
-      background: #e2c8e2;
-    }
+
     .navbar label {
       display: none;
     }
+}
+
+html {
+  scrollbar-width: none; /* For Firefox */
+  -ms-overflow-style: none; /* For Internet Explorer and Edge */
+}
+
+html::-webkit-scrollbar {
+  width: 0px; /* For Chrome, Safari, and Opera */
 }

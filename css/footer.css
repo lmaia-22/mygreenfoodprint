@@ -2,11 +2,9 @@ footer{
     bottom: 0;
     left: 0;
     right: 0;
-    background: #111;
+    background: #c57d4c39;
     height: auto;
     width: 100%;
-    padding-top: 10px;
-    color: #fff;
 }
 
 .footer-content{
@@ -17,15 +15,36 @@ footer{
     text-align: center;
 }
 
+.footer-content-copyright{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.footer-content-copyright p{
+  font-size: 15px;
+  color: #666666ff;
+  font-family: Calibri;
+  font-style: italic;
+}
+
 .footer-content h3{
     font-size: 2.0rem;
     font-weight: 500;
+    align-items: center;
+    justify-content: center;
     text-transform: capitalize;
+    color: #187c64ff;
+    font-family: Calibri;
 }
 
 .footer-content p{
-    font-size: 14px;
-    color: #cacdd2;
+    font-size: 20px;
+    color: #666666ff;
+    font-family: Calibri;
+    
 }
 
 .socials{
@@ -33,16 +52,21 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 1rem 0 3rem 0;
+    padding: 0%;
+}
+
+.isepIcon{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0%;
+  margin-top:0%;
+  margin-bottom: 0px;
 }
 
 .socials li{
     margin: 0 10px;
-}
-
-.socials a{
-    text-decoration: none;
-    color: #fff;
+    
 }
 
 .socials a i{
@@ -67,16 +91,18 @@ footer{
     word-spacing: 2px;
     text-transform: capitalize;
  }
+
  .footer-bottom p a{
    color:#44bae8;
    font-size: 16px;
    text-decoration: none;
  }
- .footer-bottom span{
+
+.footer-bottom span{
      text-transform: uppercase;
      opacity: .4;
      font-weight: 200;
- }
+}
 
  .footer-menu{
     float: right;
@@ -100,10 +126,16 @@ footer{
     color: #27bcda;
   }
 
-  @media (max-width:500px) {
+@media (max-width:500px) {
     .footer-menu ul{
       display: flex;
       margin-top: 10px;
       margin-bottom: 20px;
     }
+
+    .footer-image {
+      display: table-cell;
+      height: 50px;
+      vertical-align: middle;
     }
+}
